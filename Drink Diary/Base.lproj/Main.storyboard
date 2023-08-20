@@ -1,24 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MQ0-Cg-sef">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Data View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Data View Controller" id="BYZ-38-t0r" customClass="DataViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-9N-PH5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QFL-9N-PH5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1e1-o1-urw"/>
+                            <constraint firstAttribute="bottom" secondItem="QFL-9N-PH5" secondAttribute="bottom" id="OQs-LQ-LD8"/>
+                            <constraint firstItem="QFL-9N-PH5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T3S-3y-y6F"/>
+                            <constraint firstAttribute="trailing" secondItem="QFL-9N-PH5" secondAttribute="trailing" id="yyz-fo-hiN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="-2.0089285714285712"/>
+        </scene>
+        <!--Signin View Controller-->
+        <scene sceneID="PYb-FV-Rd5">
+            <objects>
+                <viewController title="Signin View Controller" id="mIT-YD-SI4" userLabel="Signin View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJo-mQ-0xR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-4K-ag0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4xL-9t-ZHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WMa-4K-ag0" firstAttribute="top" secondItem="rJo-mQ-0xR" secondAttribute="top" id="Cef-0N-pXp"/>
+                            <constraint firstAttribute="trailing" secondItem="WMa-4K-ag0" secondAttribute="trailing" id="Hyx-PB-YmK"/>
+                            <constraint firstItem="WMa-4K-ag0" firstAttribute="leading" secondItem="rJo-mQ-0xR" secondAttribute="leading" id="TAc-Mt-Qm9"/>
+                            <constraint firstAttribute="bottom" secondItem="WMa-4K-ag0" secondAttribute="bottom" id="wE1-Mw-Ikc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6l-5X-wti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-2"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="0mQ-nP-aki">
+            <objects>
+                <viewController title="Signup View Controller" id="MQ0-Cg-sef" userLabel="Signup View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCF-O1-Hxx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-V4-7oN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XjU-YZ-8ye" userLabel="Main View">
+                                <rect key="frame" x="20" y="68" width="374" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyK-ny-g2c" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="WvC-w0-q0l" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="303.5" width="374" height="176.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-2H-43N" userLabel="Form View">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-KK-dtF" userLabel="Email Field">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-m0-xZK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="19.5"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="john@appleseed.com" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-zL-DcR">
+                                                                <rect key="frame" x="57" y="0.0" width="317" height="19.5"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-ZO-3K5" userLabel="Password Field">
+                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-hg-8wI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="password" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qTs-2E-Ver">
+                                                                <rect key="frame" x="86" y="0.0" width="288" height="18"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="eIt-KK-dtF" secondAttribute="trailing" id="9Lf-TC-rqG" userLabel="RightEmailFieldConstraint"/>
+                                                    <constraint firstItem="rM6-ZO-3K5" firstAttribute="leading" secondItem="w2P-2H-43N" secondAttribute="leading" id="QWY-y7-Y77" userLabel="LeftPasswordFieldConstraint"/>
+                                                    <constraint firstItem="eIt-KK-dtF" firstAttribute="leading" secondItem="w2P-2H-43N" secondAttribute="leading" id="Rpd-Fs-EU4" userLabel="LeftEmailFieldConstraint"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rM6-ZO-3K5" secondAttribute="trailing" id="l8V-uY-awN" userLabel="RightPasswordFieldConstraint"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UTx-k8-hAU" userLabel="Buttons View">
+                                                <rect key="frame" x="0.0" y="97.5" width="374" height="79"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-ec-6Qg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title=" Sign up" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y3-Ht-Dj6">
+                                                        <rect key="frame" x="0.0" y="47" width="374" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Help" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-4F-LYD" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="742" width="374" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOx-xI-pBQ" userLabel="Sign up">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <buttonConfiguration key="configuration" style="filled" title=" Sign up" cornerStyle="fixed" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p7L-lA-zri"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XjU-YZ-8ye" firstAttribute="leading" secondItem="p7L-lA-zri" secondAttribute="leading" constant="20" id="IPs-FS-OnM" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="p7L-lA-zri" firstAttribute="trailing" secondItem="XjU-YZ-8ye" secondAttribute="trailing" constant="20" id="XC6-pD-rNC" userLabel="RightMainViewConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="Xqb-V4-7oN" secondAttribute="trailing" id="ijK-Ua-gBb" userLabel="RightBackgroundConstraint"/>
+                            <constraint firstItem="p7L-lA-zri" firstAttribute="bottom" secondItem="XjU-YZ-8ye" secondAttribute="bottom" constant="20" id="k9L-mU-edD" userLabel="BottomMainViewConstraint"/>
+                            <constraint firstItem="XjU-YZ-8ye" firstAttribute="top" secondItem="p7L-lA-zri" secondAttribute="top" constant="20" id="lgb-WM-bTb" userLabel="TopMainViewConstraint"/>
+                            <constraint firstItem="Xqb-V4-7oN" firstAttribute="top" secondItem="nCF-O1-Hxx" secondAttribute="top" id="oX3-yE-gX2" userLabel="TopBackgroundConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="Xqb-V4-7oN" secondAttribute="bottom" id="sqZ-U5-aTC" userLabel="BottomBackgroundConstraint"/>
+                            <constraint firstItem="Xqb-V4-7oN" firstAttribute="leading" secondItem="nCF-O1-Hxx" secondAttribute="leading" id="tN0-j9-0aq" userLabel="LeftBackgroundConstraint"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3k-Zo-J7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.4910714285713" y="-2.8985507246376816"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="FaK-gz-Cqg">
+            <objects>
+                <viewController title="Help View Controller" id="2tv-2K-9yK" userLabel="Help View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nt6-HM-K7D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-RQ-yCu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V5f-3v-CpO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8gq-RQ-yCu" secondAttribute="bottom" id="U2Y-h1-nLQ"/>
+                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="top" secondItem="Nt6-HM-K7D" secondAttribute="top" id="VlZ-Jd-blv"/>
+                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="leading" secondItem="Nt6-HM-K7D" secondAttribute="leading" id="ii6-gw-pV5"/>
+                            <constraint firstAttribute="trailing" secondItem="8gq-RQ-yCu" secondAttribute="trailing" id="pEL-ul-yRM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwj-cu-M5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultBackground" width="1680" height="1885"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonBackgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
