@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MQ0-Cg-sef">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,21 +14,114 @@
             <objects>
                 <viewController title="Data View Controller" id="BYZ-38-t0r" customClass="DataViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-9N-PH5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TJz-k0-V3G" userLabel="Main View">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiv-Nq-ziJ" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Water" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VW0-X3-sHA">
+                                                <rect key="frame" x="0.0" y="15" width="335" height="19.5"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VW0-X3-sHA" firstAttribute="leading" secondItem="aiv-Nq-ziJ" secondAttribute="leading" id="LcL-eW-w9S" userLabel="LeftBeverageNameFieldConstraint"/>
+                                            <constraint firstAttribute="trailing" secondItem="VW0-X3-sHA" secondAttribute="trailing" id="VgO-If-nsx" userLabel="RightBeverageNameFieldConstraint"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kwi-XD-vnJ" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="225.5" width="335" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LDy-yV-vre" userLabel="Form View">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-pz-vdI" userLabel="Amount Field">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-iT-b4x">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="32"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="fixed" titleAlignment="center">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="wU6-DN-QyK">
+                                                                <rect key="frame" x="53.5" y="0.0" width="230.5" height="32"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL0-Mw-3cQ">
+                                                                <rect key="frame" x="304" y="0.0" width="31" height="32"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="fixed" titleAlignment="center">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="yQi-pz-vdI" firstAttribute="leading" secondItem="LDy-yV-vre" secondAttribute="leading" id="hdh-GS-Vif" userLabel="LeftAmountFieldConstraint"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yQi-pz-vdI" secondAttribute="trailing" id="mvb-qZ-wnM" userLabel="RightAmountFieldConstraint"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pzs-W5-XXq" userLabel="Buttons View">
+                                                <rect key="frame" x="0.0" y="72" width="335" height="84"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-A5-eNf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Save" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-Ca-cXB">
+                                                        <rect key="frame" x="0.0" y="52" width="335" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Sign out" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TWD-2b-1RE" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="557" width="335" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QFL-9N-PH5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1e1-o1-urw"/>
-                            <constraint firstAttribute="bottom" secondItem="QFL-9N-PH5" secondAttribute="bottom" id="OQs-LQ-LD8"/>
-                            <constraint firstItem="QFL-9N-PH5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T3S-3y-y6F"/>
-                            <constraint firstAttribute="trailing" secondItem="QFL-9N-PH5" secondAttribute="trailing" id="yyz-fo-hiN"/>
+                            <constraint firstItem="TJz-k0-V3G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="10H-n7-xel" userLabel="TopMainViewConstraint"/>
+                            <constraint firstItem="QFL-9N-PH5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1e1-o1-urw" userLabel="TopBackgroundConstraint"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TJz-k0-V3G" secondAttribute="bottom" constant="20" id="1fd-59-si6" userLabel="BottomMainViewConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="QFL-9N-PH5" secondAttribute="bottom" id="OQs-LQ-LD8" userLabel="BottomBackgroundConstraint"/>
+                            <constraint firstItem="QFL-9N-PH5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T3S-3y-y6F" userLabel="LeftBackgroundConstraint"/>
+                            <constraint firstItem="TJz-k0-V3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lrO-EH-vWU" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJz-k0-V3G" secondAttribute="trailing" constant="20" id="s8n-eE-xYI" userLabel="RightMainViewConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="QFL-9N-PH5" secondAttribute="trailing" id="yyz-fo-hiN" userLabel="RightBackgroundConstraint"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,21 +134,122 @@
             <objects>
                 <viewController title="Signin View Controller" id="mIT-YD-SI4" userLabel="Signin View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJo-mQ-0xR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-4K-ag0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d1D-Lu-Og8" userLabel="Main View">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-Ac-7AX" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-JI-33Z" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="217.5" width="335" height="181.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="geN-s0-b1h" userLabel="Form View">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="X8X-Kb-TDi" userLabel="Email Field">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-e4-eFs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="19.5"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="john@appleseed.com" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="CyU-K4-ajv">
+                                                                <rect key="frame" x="57" y="0.0" width="278" height="19.5"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2bb-Lh-Kvn" userLabel="Password Field">
+                                                        <rect key="frame" x="0.0" y="39.5" width="335" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKt-sR-246">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="password" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-z2-fna">
+                                                                <rect key="frame" x="86" y="0.0" width="249" height="18"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="2bb-Lh-Kvn" secondAttribute="trailing" id="Gcc-St-y4E" userLabel="RightPasswordFieldConstraint"/>
+                                                    <constraint firstItem="2bb-Lh-Kvn" firstAttribute="leading" secondItem="geN-s0-b1h" secondAttribute="leading" id="OzW-Dh-RCe" userLabel="LeftPasswordFieldConstraint"/>
+                                                    <constraint firstAttribute="trailing" secondItem="X8X-Kb-TDi" secondAttribute="trailing" id="Xdp-pg-b9V" userLabel="RightEmailFieldConstraint"/>
+                                                    <constraint firstItem="X8X-Kb-TDi" firstAttribute="leading" secondItem="geN-s0-b1h" secondAttribute="leading" id="YhS-Lh-rcp" userLabel="LeftEmailFieldConstraint"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-Gq-T0Z" userLabel="Buttons View">
+                                                <rect key="frame" x="0.0" y="97.5" width="335" height="84"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvW-g9-6PY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title=" Sign in" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ug-pB-24X">
+                                                        <rect key="frame" x="0.0" y="52" width="335" height="32"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Help" cornerStyle="fixed" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6qx-rQ-ggP" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="575" width="335" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-2V-mor" userLabel="Sign up">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Don't have an account? Sign up" cornerStyle="fixed" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xL-9t-ZHx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WMa-4K-ag0" firstAttribute="top" secondItem="rJo-mQ-0xR" secondAttribute="top" id="Cef-0N-pXp"/>
-                            <constraint firstAttribute="trailing" secondItem="WMa-4K-ag0" secondAttribute="trailing" id="Hyx-PB-YmK"/>
-                            <constraint firstItem="WMa-4K-ag0" firstAttribute="leading" secondItem="rJo-mQ-0xR" secondAttribute="leading" id="TAc-Mt-Qm9"/>
-                            <constraint firstAttribute="bottom" secondItem="WMa-4K-ag0" secondAttribute="bottom" id="wE1-Mw-Ikc"/>
+                            <constraint firstItem="WMa-4K-ag0" firstAttribute="top" secondItem="rJo-mQ-0xR" secondAttribute="top" id="Cef-0N-pXp" userLabel="TopBackgroundConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="WMa-4K-ag0" secondAttribute="trailing" id="Hyx-PB-YmK" userLabel="RightBackgroundConstraint"/>
+                            <constraint firstItem="WMa-4K-ag0" firstAttribute="leading" secondItem="rJo-mQ-0xR" secondAttribute="leading" id="TAc-Mt-Qm9" userLabel="LeftBackgroundConstraint"/>
+                            <constraint firstItem="4xL-9t-ZHx" firstAttribute="trailing" secondItem="d1D-Lu-Og8" secondAttribute="trailing" constant="20" id="UBv-s1-nQN" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="4xL-9t-ZHx" firstAttribute="bottom" secondItem="d1D-Lu-Og8" secondAttribute="bottom" constant="20" id="XEE-mb-3f9" userLabel="BottomMainViewConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="WMa-4K-ag0" secondAttribute="bottom" id="wE1-Mw-Ikc" userLabel="BottomBackgroundConstraint"/>
+                            <constraint firstItem="d1D-Lu-Og8" firstAttribute="leading" secondItem="4xL-9t-ZHx" secondAttribute="leading" constant="20" id="wjN-Mv-slQ" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="d1D-Lu-Og8" firstAttribute="top" secondItem="4xL-9t-ZHx" secondAttribute="top" constant="20" id="yU3-x1-bRG" userLabel="TopMainViewConstraint"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -68,27 +262,27 @@
             <objects>
                 <viewController title="Signup View Controller" id="MQ0-Cg-sef" userLabel="Signup View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nCF-O1-Hxx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-V4-7oN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XjU-YZ-8ye" userLabel="Main View">
-                                <rect key="frame" x="20" y="68" width="374" height="774"/>
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyK-ny-g2c" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="WvC-w0-q0l" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="303.5" width="374" height="176.5"/>
+                                        <rect key="frame" x="0.0" y="217.5" width="335" height="181.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-2H-43N" userLabel="Form View">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-KK-dtF" userLabel="Email Field">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-m0-xZK">
                                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="19.5"/>
@@ -98,7 +292,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="john@appleseed.com" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-zL-DcR">
-                                                                <rect key="frame" x="57" y="0.0" width="317" height="19.5"/>
+                                                                <rect key="frame" x="57" y="0.0" width="278" height="19.5"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
@@ -106,7 +300,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-ZO-3K5" userLabel="Password Field">
-                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="18"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="335" height="18"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-hg-8wI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
@@ -116,7 +310,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="password" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qTs-2E-Ver">
-                                                                <rect key="frame" x="86" y="0.0" width="288" height="18"/>
+                                                                <rect key="frame" x="86" y="0.0" width="249" height="18"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
@@ -131,11 +325,11 @@
                                                     <constraint firstAttribute="trailing" secondItem="rM6-ZO-3K5" secondAttribute="trailing" id="l8V-uY-awN" userLabel="RightPasswordFieldConstraint"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UTx-k8-hAU" userLabel="Buttons View">
-                                                <rect key="frame" x="0.0" y="97.5" width="374" height="79"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UTx-k8-hAU" userLabel="Buttons View">
+                                                <rect key="frame" x="0.0" y="97.5" width="335" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-ec-6Qg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title=" Sign up" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -144,7 +338,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y3-Ht-Dj6">
-                                                        <rect key="frame" x="0.0" y="47" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="52" width="335" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Help" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -157,12 +351,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-4F-LYD" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="742" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="575" width="335" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOx-xI-pBQ" userLabel="Sign up">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
                                                 <color key="tintColor" name="AccentColor"/>
-                                                <buttonConfiguration key="configuration" style="filled" title=" Sign up" cornerStyle="fixed" titleAlignment="center">
+                                                <buttonConfiguration key="configuration" style="filled" title="Have an account? Sign in" cornerStyle="fixed" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                                     <color key="baseForegroundColor" name="AccentColor"/>
                                                     <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
@@ -196,21 +390,66 @@
             <objects>
                 <viewController title="Help View Controller" id="2tv-2K-9yK" userLabel="Help View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nt6-HM-K7D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-RQ-yCu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-3X-3Nk" userLabel="Main View">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-jx-eRx" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="158.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vUP-2y-w1j">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="158.5"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <string key="text">Elevate your beverage consumption monitoring with Drink Diary app. Embrace a free and seamless journey by signing up to effortlessly track your beverage choices. Accessible via both web and iOS app, our user-friendly interface ensures you're always aligned with your goals. Watch as your drink data gracefully resets at midnight, ready to kickstart your day anew. You have the power to erase your data or your account whenever you choose. Enhance your daily routine with a touch of elegance and practicality.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZEW-ja-8f7" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="523" width="335" height="84"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j42-ML-rd5">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Delete account?" cornerStyle="fixed" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-xM-ULx">
+                                                <rect key="frame" x="0.0" y="52" width="335" height="32"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Dismiss" cornerStyle="fixed" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V5f-3v-CpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8gq-RQ-yCu" secondAttribute="bottom" id="U2Y-h1-nLQ"/>
-                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="top" secondItem="Nt6-HM-K7D" secondAttribute="top" id="VlZ-Jd-blv"/>
-                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="leading" secondItem="Nt6-HM-K7D" secondAttribute="leading" id="ii6-gw-pV5"/>
-                            <constraint firstAttribute="trailing" secondItem="8gq-RQ-yCu" secondAttribute="trailing" id="pEL-ul-yRM"/>
+                            <constraint firstItem="V5f-3v-CpO" firstAttribute="trailing" secondItem="3Oi-3X-3Nk" secondAttribute="trailing" constant="20" id="11m-JR-fmc" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="top" secondItem="V5f-3v-CpO" secondAttribute="top" constant="20" id="TNy-mN-fC0" userLabel="TopMainViewConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="8gq-RQ-yCu" secondAttribute="bottom" id="U2Y-h1-nLQ" userLabel="BottomBackgroundConstraint"/>
+                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="top" secondItem="Nt6-HM-K7D" secondAttribute="top" id="VlZ-Jd-blv" userLabel="TopBackgroundConstraint"/>
+                            <constraint firstItem="V5f-3v-CpO" firstAttribute="bottom" secondItem="3Oi-3X-3Nk" secondAttribute="bottom" constant="20" id="bDm-yp-Rl7" userLabel="BottomMainViewConstraint"/>
+                            <constraint firstItem="8gq-RQ-yCu" firstAttribute="leading" secondItem="Nt6-HM-K7D" secondAttribute="leading" id="ii6-gw-pV5" userLabel="LeftBackgroundConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="8gq-RQ-yCu" secondAttribute="trailing" id="pEL-ul-yRM" userLabel="RightBackgroundConstraint"/>
+                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="leading" secondItem="V5f-3v-CpO" secondAttribute="leading" constant="20" id="zA3-WS-dIG" userLabel="LeftMainViewConstraint"/>
                         </constraints>
                     </view>
                 </viewController>
