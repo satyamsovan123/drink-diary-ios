@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90FA3292A928E830001AC53 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3282A928E830001AC53 /* AuthenticationModel.swift */; };
+		E90FA32D2A928F650001AC53 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA32C2A928F650001AC53 /* SignupViewController.swift */; };
+		E90FA32F2A928F830001AC53 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA32E2A928F830001AC53 /* SigninViewController.swift */; };
+		E90FA3312A928FB20001AC53 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3302A928FB20001AC53 /* HelpViewController.swift */; };
+		E90FA3342A928FEB0001AC53 /* DrinkDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3332A928FEB0001AC53 /* DrinkDataModel.swift */; };
+		E90FA3372A9292B90001AC53 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3362A9292B90001AC53 /* AuthenticationManager.swift */; };
+		E90FA3392A9292C60001AC53 /* DrinkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3382A9292C60001AC53 /* DrinkDataManager.swift */; };
 		E9252F3C2A90FEBF00D8A6CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9252F3B2A90FEBF00D8A6CE /* AppDelegate.swift */; };
 		E9252F3E2A90FEBF00D8A6CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9252F3D2A90FEBF00D8A6CE /* SceneDelegate.swift */; };
-		E9252F402A90FEBF00D8A6CE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9252F3F2A90FEBF00D8A6CE /* DataViewController.swift */; };
+		E9252F402A90FEBF00D8A6CE /* DrinkDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9252F3F2A90FEBF00D8A6CE /* DrinkDataViewController.swift */; };
 		E9252F432A90FEBF00D8A6CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9252F412A90FEBF00D8A6CE /* Main.storyboard */; };
 		E9252F452A90FEC000D8A6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9252F442A90FEC000D8A6CE /* Assets.xcassets */; };
 		E9252F482A90FEC000D8A6CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9252F462A90FEC000D8A6CE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90FA3282A928E830001AC53 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		E90FA32C2A928F650001AC53 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E90FA32E2A928F830001AC53 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E90FA3302A928FB20001AC53 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		E90FA3332A928FEB0001AC53 /* DrinkDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDataModel.swift; sourceTree = "<group>"; };
+		E90FA3362A9292B90001AC53 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		E90FA3382A9292C60001AC53 /* DrinkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDataManager.swift; sourceTree = "<group>"; };
 		E9252F382A90FEBF00D8A6CE /* Drink Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9252F3B2A90FEBF00D8A6CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9252F3D2A90FEBF00D8A6CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9252F3F2A90FEBF00D8A6CE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		E9252F3F2A90FEBF00D8A6CE /* DrinkDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDataViewController.swift; sourceTree = "<group>"; };
 		E9252F422A90FEBF00D8A6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9252F442A90FEC000D8A6CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9252F472A90FEC000D8A6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +51,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90FA3262A928E4F0001AC53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9252F412A90FEBF00D8A6CE /* Main.storyboard */,
+				E9252F462A90FEC000D8A6CE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E90FA3272A928E600001AC53 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9252F3F2A90FEBF00D8A6CE /* DrinkDataViewController.swift */,
+				E90FA32C2A928F650001AC53 /* SignupViewController.swift */,
+				E90FA32E2A928F830001AC53 /* SigninViewController.swift */,
+				E90FA3302A928FB20001AC53 /* HelpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E90FA32B2A928EB10001AC53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E90FA3322A928FCF0001AC53 /* Authentication */,
+				E90FA3352A928FEF0001AC53 /* DrinkData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E90FA3322A928FCF0001AC53 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E90FA3282A928E830001AC53 /* AuthenticationModel.swift */,
+				E90FA3362A9292B90001AC53 /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E90FA3352A928FEF0001AC53 /* DrinkData */ = {
+			isa = PBXGroup;
+			children = (
+				E90FA3332A928FEB0001AC53 /* DrinkDataModel.swift */,
+				E90FA3382A9292C60001AC53 /* DrinkDataManager.swift */,
+			);
+			path = DrinkData;
+			sourceTree = "<group>";
+		};
 		E9252F2F2A90FEBF00D8A6CE = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +117,12 @@
 		E9252F3A2A90FEBF00D8A6CE /* Drink Diary */ = {
 			isa = PBXGroup;
 			children = (
+				E90FA32B2A928EB10001AC53 /* Models */,
 				E9252F3B2A90FEBF00D8A6CE /* AppDelegate.swift */,
 				E9252F3D2A90FEBF00D8A6CE /* SceneDelegate.swift */,
-				E9252F3F2A90FEBF00D8A6CE /* DataViewController.swift */,
-				E9252F412A90FEBF00D8A6CE /* Main.storyboard */,
+				E90FA3272A928E600001AC53 /* Controllers */,
+				E90FA3262A928E4F0001AC53 /* Views */,
 				E9252F442A90FEC000D8A6CE /* Assets.xcassets */,
-				E9252F462A90FEC000D8A6CE /* LaunchScreen.storyboard */,
 				E9252F492A90FEC000D8A6CE /* Info.plist */,
 			);
 			path = "Drink Diary";
@@ -138,7 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9252F402A90FEBF00D8A6CE /* DataViewController.swift in Sources */,
+				E90FA3312A928FB20001AC53 /* HelpViewController.swift in Sources */,
+				E9252F402A90FEBF00D8A6CE /* DrinkDataViewController.swift in Sources */,
+				E90FA3292A928E830001AC53 /* AuthenticationModel.swift in Sources */,
+				E90FA3372A9292B90001AC53 /* AuthenticationManager.swift in Sources */,
+				E90FA3392A9292C60001AC53 /* DrinkDataManager.swift in Sources */,
+				E90FA32F2A928F830001AC53 /* SigninViewController.swift in Sources */,
+				E90FA32D2A928F650001AC53 /* SignupViewController.swift in Sources */,
+				E90FA3342A928FEB0001AC53 /* DrinkDataModel.swift in Sources */,
 				E9252F3C2A90FEBF00D8A6CE /* AppDelegate.swift in Sources */,
 				E9252F3E2A90FEBF00D8A6CE /* SceneDelegate.swift in Sources */,
 			);
