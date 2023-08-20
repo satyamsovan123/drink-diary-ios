@@ -26,6 +26,6 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func signupPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToDataFromSignup", sender: self)
+        // performSegue(withIdentifier: "goToDataFromSignup", sender: self)
     }
 }

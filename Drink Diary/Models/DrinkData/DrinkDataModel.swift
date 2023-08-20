@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct DrinkDataRequest: Codable {
+    let totalDrinks: Int
+    let beverageName: String
+}
+
 struct DrinkDataResponse: Codable {
     let data: DrinkData
     let message: String

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MQ0-Cg-sef">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,39 +14,41 @@
             <objects>
                 <viewController title="Drink Data View Controller" id="BYZ-38-t0r" customClass="DrinkDataViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-9N-PH5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TJz-k0-V3G" userLabel="Main View">
-                                <rect key="frame" x="20" y="20" width="374" height="856"/>
+                                <rect key="frame" x="50" y="20" width="796" height="374"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiv-Nq-ziJ" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiv-Nq-ziJ" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="796" height="100"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="ss" placeholder="Water" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VW0-X3-sHA">
-                                                <rect key="frame" x="0.0" y="15" width="374" height="19.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Water" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VW0-X3-sHA">
+                                                <rect key="frame" x="0.0" y="80.5" width="796" height="19.5"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Gvu-ke-Lzg"/>
                                             <constraint firstItem="VW0-X3-sHA" firstAttribute="leading" secondItem="aiv-Nq-ziJ" secondAttribute="leading" id="LcL-eW-w9S" userLabel="LeftBeverageNameFieldConstraint"/>
                                             <constraint firstAttribute="trailing" secondItem="VW0-X3-sHA" secondAttribute="trailing" id="VgO-If-nsx" userLabel="RightBeverageNameFieldConstraint"/>
+                                            <constraint firstAttribute="bottom" secondItem="VW0-X3-sHA" secondAttribute="bottom" id="pa2-io-MJ4"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kwi-XD-vnJ" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="350" width="374" height="156"/>
+                                        <rect key="frame" x="0.0" y="121.5" width="796" height="156"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LDy-yV-vre" userLabel="Form View">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-pz-vdI" userLabel="Amount Field">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-iT-b4x">
                                                                 <rect key="frame" x="0.0" y="0.0" width="33.5" height="32"/>
@@ -61,13 +63,13 @@
                                                                 </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="wU6-DN-QyK">
-                                                                <rect key="frame" x="53.5" y="0.0" width="269.5" height="32"/>
+                                                                <rect key="frame" x="53.5" y="0.0" width="691.5" height="32"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL0-Mw-3cQ">
-                                                                <rect key="frame" x="343" y="0.0" width="31" height="32"/>
+                                                                <rect key="frame" x="765" y="0.0" width="31" height="32"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="fixed" titleAlignment="center">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -82,15 +84,16 @@
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="J6o-mT-FXc"/>
                                                     <constraint firstItem="yQi-pz-vdI" firstAttribute="leading" secondItem="LDy-yV-vre" secondAttribute="leading" id="hdh-GS-Vif" userLabel="LeftAmountFieldConstraint"/>
                                                     <constraint firstAttribute="trailing" secondItem="yQi-pz-vdI" secondAttribute="trailing" id="mvb-qZ-wnM" userLabel="RightAmountFieldConstraint"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pzs-W5-XXq" userLabel="Buttons View">
-                                                <rect key="frame" x="0.0" y="72" width="374" height="84"/>
+                                                <rect key="frame" x="0.0" y="72" width="796" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-A5-eNf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Save" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -102,7 +105,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-Ca-cXB">
-                                                        <rect key="frame" x="0.0" y="52" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="52" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Sign out" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -118,7 +121,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TWD-2b-1RE" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="806" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="324" width="796" height="50"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -131,8 +134,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TJz-k0-V3G" secondAttribute="bottom" constant="20" id="1fd-59-si6" userLabel="BottomMainViewConstraint"/>
                             <constraint firstAttribute="bottom" secondItem="QFL-9N-PH5" secondAttribute="bottom" id="OQs-LQ-LD8" userLabel="BottomBackgroundConstraint"/>
                             <constraint firstItem="QFL-9N-PH5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T3S-3y-y6F" userLabel="LeftBackgroundConstraint"/>
-                            <constraint firstItem="TJz-k0-V3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lrO-EH-vWU" userLabel="LeftMainViewConstraint"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJz-k0-V3G" secondAttribute="trailing" constant="20" id="s8n-eE-xYI" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="TJz-k0-V3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="lrO-EH-vWU" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJz-k0-V3G" secondAttribute="trailing" constant="50" id="s8n-eE-xYI" userLabel="RightMainViewConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="QFL-9N-PH5" secondAttribute="trailing" id="yyz-fo-hiN" userLabel="RightBackgroundConstraint"/>
                         </constraints>
                     </view>
@@ -149,27 +152,27 @@
             <objects>
                 <viewController title="Signin View Controller" id="mIT-YD-SI4" userLabel="Signin View Controller" customClass="SigninViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJo-mQ-0xR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-4K-ag0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d1D-Lu-Og8" userLabel="Main View">
-                                <rect key="frame" x="20" y="20" width="374" height="856"/>
+                                <rect key="frame" x="50" y="20" width="796" height="374"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-Ac-7AX" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="796" height="50"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-JI-33Z" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="342" width="374" height="181.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="796" height="181.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="geN-s0-b1h" userLabel="Form View">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="57.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="X8X-Kb-TDi" userLabel="Email Field">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="19.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-e4-eFs">
                                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="19.5"/>
@@ -179,7 +182,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="john@appleseed.com" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="CyU-K4-ajv">
-                                                                <rect key="frame" x="77" y="0.0" width="297" height="19.5"/>
+                                                                <rect key="frame" x="77" y="0.0" width="719" height="19.5"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
@@ -187,7 +190,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2bb-Lh-Kvn" userLabel="Password Field">
-                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="18"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="796" height="18"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKt-sR-246">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
@@ -197,7 +200,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="password" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-z2-fna">
-                                                                <rect key="frame" x="76" y="0.0" width="298" height="18"/>
+                                                                <rect key="frame" x="76" y="0.0" width="720" height="18"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
@@ -213,10 +216,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-Gq-T0Z" userLabel="Buttons View">
-                                                <rect key="frame" x="0.0" y="97.5" width="374" height="84"/>
+                                                <rect key="frame" x="0.0" y="97.5" width="796" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvW-g9-6PY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title=" Sign in" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -228,7 +231,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ug-pB-24X">
-                                                        <rect key="frame" x="0.0" y="52" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="52" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Help" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -244,10 +247,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6qx-rQ-ggP" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="824" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="342" width="796" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-2V-mor" userLabel="Sign up">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Don't have an account? Sign up" cornerStyle="fixed" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -269,10 +272,10 @@
                             <constraint firstItem="WMa-4K-ag0" firstAttribute="top" secondItem="rJo-mQ-0xR" secondAttribute="top" id="Cef-0N-pXp" userLabel="TopBackgroundConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="WMa-4K-ag0" secondAttribute="trailing" id="Hyx-PB-YmK" userLabel="RightBackgroundConstraint"/>
                             <constraint firstItem="WMa-4K-ag0" firstAttribute="leading" secondItem="rJo-mQ-0xR" secondAttribute="leading" id="TAc-Mt-Qm9" userLabel="LeftBackgroundConstraint"/>
-                            <constraint firstItem="4xL-9t-ZHx" firstAttribute="trailing" secondItem="d1D-Lu-Og8" secondAttribute="trailing" constant="20" id="UBv-s1-nQN" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="4xL-9t-ZHx" firstAttribute="trailing" secondItem="d1D-Lu-Og8" secondAttribute="trailing" constant="50" id="UBv-s1-nQN" userLabel="RightMainViewConstraint"/>
                             <constraint firstItem="4xL-9t-ZHx" firstAttribute="bottom" secondItem="d1D-Lu-Og8" secondAttribute="bottom" constant="20" id="XEE-mb-3f9" userLabel="BottomMainViewConstraint"/>
                             <constraint firstAttribute="bottom" secondItem="WMa-4K-ag0" secondAttribute="bottom" id="wE1-Mw-Ikc" userLabel="BottomBackgroundConstraint"/>
-                            <constraint firstItem="d1D-Lu-Og8" firstAttribute="leading" secondItem="4xL-9t-ZHx" secondAttribute="leading" constant="20" id="wjN-Mv-slQ" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="d1D-Lu-Og8" firstAttribute="leading" secondItem="4xL-9t-ZHx" secondAttribute="leading" constant="50" id="wjN-Mv-slQ" userLabel="LeftMainViewConstraint"/>
                             <constraint firstItem="d1D-Lu-Og8" firstAttribute="top" secondItem="4xL-9t-ZHx" secondAttribute="top" constant="20" id="yU3-x1-bRG" userLabel="TopMainViewConstraint"/>
                         </constraints>
                     </view>
@@ -294,27 +297,27 @@
             <objects>
                 <viewController title="Signup View Controller" id="MQ0-Cg-sef" userLabel="Signup View Controller" customClass="SignupViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nCF-O1-Hxx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-V4-7oN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XjU-YZ-8ye" userLabel="Main View">
-                                <rect key="frame" x="20" y="20" width="374" height="856"/>
+                                <rect key="frame" x="50" y="20" width="796" height="374"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyK-ny-g2c" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="796" height="50"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="WvC-w0-q0l" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="342" width="374" height="181.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="796" height="181.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-2H-43N" userLabel="Form View">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="57.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-KK-dtF" userLabel="Email Field">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="19.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-m0-xZK">
                                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="19.5"/>
@@ -324,7 +327,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="john@appleseed.com" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-zL-DcR">
-                                                                <rect key="frame" x="77" y="0.0" width="297" height="19.5"/>
+                                                                <rect key="frame" x="77" y="0.0" width="719" height="19.5"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
@@ -332,7 +335,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-ZO-3K5" userLabel="Password Field">
-                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="18"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="796" height="18"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-hg-8wI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
@@ -342,7 +345,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="password" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qTs-2E-Ver">
-                                                                <rect key="frame" x="76" y="0.0" width="298" height="18"/>
+                                                                <rect key="frame" x="76" y="0.0" width="720" height="18"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
@@ -358,10 +361,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UTx-k8-hAU" userLabel="Buttons View">
-                                                <rect key="frame" x="0.0" y="97.5" width="374" height="84"/>
+                                                <rect key="frame" x="0.0" y="97.5" width="796" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-ec-6Qg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title=" Sign up" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -373,7 +376,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y3-Ht-Dj6">
-                                                        <rect key="frame" x="0.0" y="52" width="374" height="32"/>
+                                                        <rect key="frame" x="0.0" y="52" width="796" height="32"/>
                                                         <color key="tintColor" name="AccentColor"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Help" cornerStyle="fixed" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -389,10 +392,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-4F-LYD" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="824" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="342" width="796" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOx-xI-pBQ" userLabel="Sign up">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Have an account? Sign in" cornerStyle="fixed" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -411,8 +414,8 @@
                         <viewLayoutGuide key="safeArea" id="p7L-lA-zri"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XjU-YZ-8ye" firstAttribute="leading" secondItem="p7L-lA-zri" secondAttribute="leading" constant="20" id="IPs-FS-OnM" userLabel="LeftMainViewConstraint"/>
-                            <constraint firstItem="p7L-lA-zri" firstAttribute="trailing" secondItem="XjU-YZ-8ye" secondAttribute="trailing" constant="20" id="XC6-pD-rNC" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="XjU-YZ-8ye" firstAttribute="leading" secondItem="p7L-lA-zri" secondAttribute="leading" constant="50" id="IPs-FS-OnM" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="p7L-lA-zri" firstAttribute="trailing" secondItem="XjU-YZ-8ye" secondAttribute="trailing" constant="50" id="XC6-pD-rNC" userLabel="RightMainViewConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="Xqb-V4-7oN" secondAttribute="trailing" id="ijK-Ua-gBb" userLabel="RightBackgroundConstraint"/>
                             <constraint firstItem="p7L-lA-zri" firstAttribute="bottom" secondItem="XjU-YZ-8ye" secondAttribute="bottom" constant="20" id="k9L-mU-edD" userLabel="BottomMainViewConstraint"/>
                             <constraint firstItem="XjU-YZ-8ye" firstAttribute="top" secondItem="p7L-lA-zri" secondAttribute="top" constant="20" id="lgb-WM-bTb" userLabel="TopMainViewConstraint"/>
@@ -439,21 +442,21 @@
             <objects>
                 <viewController title="Help View Controller" id="2tv-2K-9yK" userLabel="Help View Controller" customClass="HelpViewController" customModule="Drink_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nt6-HM-K7D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-RQ-yCu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-3X-3Nk" userLabel="Main View">
-                                <rect key="frame" x="20" y="20" width="374" height="846"/>
+                                <rect key="frame" x="50" y="20" width="796" height="374"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-jx-eRx" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="179.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="796" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vUP-2y-w1j">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="179.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="90"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <string key="text">Elevate your beverage consumption monitoring with Drink Diary app. Embrace a free and seamless journey by signing up to effortlessly track your beverage choices. Accessible via both web and iOS app, our user-friendly interface ensures you're always aligned with your goals. Watch as your drink data gracefully resets at midnight, ready to kickstart your day anew. You have the power to erase your data or your account whenever you choose. Enhance your daily routine with a touch of elegance and practicality.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -463,10 +466,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZEW-ja-8f7" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="762" width="374" height="84"/>
+                                        <rect key="frame" x="0.0" y="342" width="796" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j42-ML-rd5">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="32"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Dismiss" cornerStyle="fixed" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -477,8 +480,8 @@
                                                     <action selector="dismissPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="iXd-Td-m26"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-xM-ULx">
-                                                <rect key="frame" x="0.0" y="52" width="374" height="32"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-xM-ULx">
+                                                <rect key="frame" x="0.0" y="0.0" width="796" height="0.0"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Delete account?" cornerStyle="fixed" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -497,14 +500,14 @@
                         <viewLayoutGuide key="safeArea" id="V5f-3v-CpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V5f-3v-CpO" firstAttribute="trailing" secondItem="3Oi-3X-3Nk" secondAttribute="trailing" constant="20" id="11m-JR-fmc" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="V5f-3v-CpO" firstAttribute="trailing" secondItem="3Oi-3X-3Nk" secondAttribute="trailing" constant="50" id="11m-JR-fmc" userLabel="RightMainViewConstraint"/>
                             <constraint firstItem="3Oi-3X-3Nk" firstAttribute="top" secondItem="V5f-3v-CpO" secondAttribute="top" constant="20" id="TNy-mN-fC0" userLabel="TopMainViewConstraint"/>
                             <constraint firstAttribute="bottom" secondItem="8gq-RQ-yCu" secondAttribute="bottom" id="U2Y-h1-nLQ" userLabel="BottomBackgroundConstraint"/>
                             <constraint firstItem="8gq-RQ-yCu" firstAttribute="top" secondItem="Nt6-HM-K7D" secondAttribute="top" id="VlZ-Jd-blv" userLabel="TopBackgroundConstraint"/>
                             <constraint firstItem="V5f-3v-CpO" firstAttribute="bottom" secondItem="3Oi-3X-3Nk" secondAttribute="bottom" constant="20" id="bDm-yp-Rl7" userLabel="BottomMainViewConstraint"/>
                             <constraint firstItem="8gq-RQ-yCu" firstAttribute="leading" secondItem="Nt6-HM-K7D" secondAttribute="leading" id="ii6-gw-pV5" userLabel="LeftBackgroundConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="8gq-RQ-yCu" secondAttribute="trailing" id="pEL-ul-yRM" userLabel="RightBackgroundConstraint"/>
-                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="leading" secondItem="V5f-3v-CpO" secondAttribute="leading" constant="20" id="zA3-WS-dIG" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="leading" secondItem="V5f-3v-CpO" secondAttribute="leading" constant="50" id="zA3-WS-dIG" userLabel="LeftMainViewConstraint"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -514,8 +517,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XiS-eP-gbX"/>
-        <segue reference="sLY-DE-WF6"/>
+        <segue reference="E5f-QD-D5a"/>
+        <segue reference="NSE-9k-6bX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DefaultBackground" width="1680" height="1885"/>

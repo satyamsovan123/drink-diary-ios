@@ -26,6 +26,6 @@ class SigninViewController: UIViewController {
     }
     
     @IBAction func signinPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToDataFromSignin", sender: self)
+        // performSegue(withIdentifier: "goToDataFromSignin", sender: self)
     }
 }
