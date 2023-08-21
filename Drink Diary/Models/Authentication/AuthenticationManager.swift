@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol AuthenticationManagerDelegate {
+    func didUpdateData(_ authenticationManager: AuthenticationManager, data: AuthenticationResponse)
+    func didFailWithError(error: Error)
+    func didReceiveToken(token: String)
+}
+
+struct AuthenticationManager {
+    var delegate: AuthenticationManagerDelegate?
+}

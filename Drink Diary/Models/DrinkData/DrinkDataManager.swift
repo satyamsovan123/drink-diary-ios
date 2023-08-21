@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol DrinkDataManagerDelegate {
+    func didUpdateData(_ drinkDataManager: DrinkDataManager, data: DrinkDataResponse)
+    func didFailWithError(error: Error)
+}
+struct DrinkDataManager {
+    var delegate: DrinkDataManagerDelegate?
+}

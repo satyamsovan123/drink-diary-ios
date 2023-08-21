@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class HelpViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,6 +19,7 @@ class HelpViewController: UIViewController {
     }
     
     @IBAction func deleteAccountPressed(_ sender: UIButton) {
+        // performSegue(withIdentifier: "goToInformationFromSignup", sender: self)
     }
     
 }
