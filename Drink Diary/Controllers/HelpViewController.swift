@@ -9,10 +9,12 @@ import UIKit
 
 
 class HelpViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        helpLabel.text = Constant.Common.helpLabel
     }
+    
+    @IBOutlet weak var helpLabel: UILabel!
     
     @IBAction func dismissPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -21,5 +23,4 @@ class HelpViewController: UIViewController {
     @IBAction func deleteAccountPressed(_ sender: UIButton) {
         // performSegue(withIdentifier: "goToInformationFromSignup", sender: self)
     }
-    
 }

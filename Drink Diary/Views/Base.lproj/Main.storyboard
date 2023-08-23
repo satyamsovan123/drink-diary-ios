@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MQ0-Cg-sef">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mIT-YD-SI4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -31,7 +31,7 @@
                                                 <rect key="frame" x="0.0" y="80.5" width="314" height="19.5"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -50,26 +50,8 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-pz-vdI" userLabel="Amount Field">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="32"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-iT-b4x">
-                                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="32"/>
-                                                                <color key="tintColor" name="AccentColor"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="fixed" titleAlignment="center">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                                                    <color key="baseForegroundColor" name="AccentColor"/>
-                                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
-                                                                </buttonConfiguration>
-                                                                <connections>
-                                                                    <action selector="increasedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ee0-fq-zKS"/>
-                                                                </connections>
-                                                            </button>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="wU6-DN-QyK">
-                                                                <rect key="frame" x="53.5" y="0.0" width="209.5" height="32"/>
-                                                                <color key="tintColor" name="AccentColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                                            </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL0-Mw-3cQ">
-                                                                <rect key="frame" x="283" y="0.0" width="31" height="32"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="32"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="fixed" titleAlignment="center">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -78,6 +60,24 @@
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="decreasedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHT-Tp-6Yp"/>
+                                                                </connections>
+                                                            </button>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="wU6-DN-QyK">
+                                                                <rect key="frame" x="51" y="0.0" width="209.5" height="32"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-iT-b4x">
+                                                                <rect key="frame" x="280.5" y="0.0" width="33.5" height="32"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="fixed" titleAlignment="center">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="increasedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ee0-fq-zKS"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -125,6 +125,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Dvh-cC-PM2">
+                                <rect key="frame" x="50" y="438" width="314" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="color" systemColor="labelColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,6 +146,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Dvh-cC-PM2" id="0oe-fh-7xd"/>
+                        <outlet property="background" destination="QFL-9N-PH5" id="i8R-jj-D6Y"/>
+                        <outlet property="beverageNameTextField" destination="VW0-X3-sHA" id="hNd-WN-6Xa"/>
+                        <outlet property="mainView" destination="TJz-k0-V3G" id="10V-fG-bSF"/>
                         <outlet property="totalDrinksTextField" destination="wU6-DN-QyK" id="rn8-LH-c4x"/>
                         <segue destination="OhL-Vs-rYi" kind="presentation" identifier="goToInformationFromDrinkData" id="kts-af-XQh"/>
                     </connections>
@@ -160,13 +170,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-29-dr6" userLabel="Main View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-mO-eSK" userLabel="Main View">
                                 <rect key="frame" x="50" y="20" width="314" height="846"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-Xg-bi4">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="110.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-Xg-bi4">
+                                        <rect key="frame" x="0.0" y="423" width="314" height="0.0"/>
                                         <color key="tintColor" name="AccentColor"/>
-                                        <mutableString key="text">Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. Some error occured. </mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -181,26 +190,35 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="dismissPressed:" destination="OhL-Vs-rYi" eventType="touchUpInside" id="Jvb-am-rtp"/>
-                                            <action selector="dismissPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="mMp-7d-1id"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hEU-GT-0cX" secondAttribute="bottom" id="36g-7l-4Di" userLabel="BottomDismissButtonConstraint"/>
+                                    <constraint firstAttribute="trailing" secondItem="hEU-GT-0cX" secondAttribute="trailing" id="4pl-TM-hcU" userLabel="RightDismissButtonConstraint"/>
+                                    <constraint firstItem="9a3-Xg-bi4" firstAttribute="centerY" secondItem="UC5-mO-eSK" secondAttribute="centerY" id="A03-Mh-aLc" userLabel="VerticalMessageLabelConstraint"/>
+                                    <constraint firstItem="9a3-Xg-bi4" firstAttribute="centerX" secondItem="UC5-mO-eSK" secondAttribute="centerX" id="JwT-J8-7Eu" userLabel="HorizontalMessageLabelConstraint"/>
+                                    <constraint firstAttribute="trailing" secondItem="9a3-Xg-bi4" secondAttribute="trailing" id="dQG-Va-iJr" userLabel="RightMessageLabelConstraint"/>
+                                    <constraint firstItem="9a3-Xg-bi4" firstAttribute="leading" secondItem="UC5-mO-eSK" secondAttribute="leading" id="hQ3-eO-90u" userLabel="LeftMessageLabelConstraint"/>
+                                    <constraint firstItem="hEU-GT-0cX" firstAttribute="leading" secondItem="UC5-mO-eSK" secondAttribute="leading" id="zVA-AD-wev" userLabel="LeftDismissButtonConstraint"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="njg-wq-Mza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="njg-wq-Mza" firstAttribute="trailing" secondItem="gQD-29-dr6" secondAttribute="trailing" constant="50" id="1re-Gr-bW9" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="UC5-mO-eSK" firstAttribute="top" secondItem="njg-wq-Mza" secondAttribute="top" constant="20" id="2Pf-Xq-VlK" userLabel="TopMainViewConstraint"/>
+                            <constraint firstItem="UC5-mO-eSK" firstAttribute="leading" secondItem="njg-wq-Mza" secondAttribute="leading" constant="50" id="8Lg-fL-E5X" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="njg-wq-Mza" firstAttribute="trailing" secondItem="UC5-mO-eSK" secondAttribute="trailing" constant="50" id="Cfk-oB-tZa" userLabel="RightMainViewConstraint"/>
                             <constraint firstAttribute="bottom" secondItem="gSH-Ku-Xi4" secondAttribute="bottom" id="EGK-Co-uke" userLabel="BottomBackgroundConstraint"/>
                             <constraint firstItem="gSH-Ku-Xi4" firstAttribute="leading" secondItem="ohz-BF-5MA" secondAttribute="leading" id="EdG-vR-Itn" userLabel="LeftBackgroundConstraint"/>
-                            <constraint firstItem="njg-wq-Mza" firstAttribute="bottom" secondItem="gQD-29-dr6" secondAttribute="bottom" constant="20" id="JJX-OW-eAB" userLabel="BottomMainViewConstraint"/>
-                            <constraint firstItem="gQD-29-dr6" firstAttribute="leading" secondItem="njg-wq-Mza" secondAttribute="leading" constant="50" id="LL0-ld-cTP" userLabel="LeftMainViewConstraint"/>
-                            <constraint firstItem="gQD-29-dr6" firstAttribute="top" secondItem="njg-wq-Mza" secondAttribute="top" constant="20" id="TZO-Xe-gHZ" userLabel="TopMainViewConstraint"/>
                             <constraint firstItem="gSH-Ku-Xi4" firstAttribute="top" secondItem="ohz-BF-5MA" secondAttribute="top" id="bek-OZ-xcE" userLabel="TopBackgroundConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="gSH-Ku-Xi4" secondAttribute="trailing" id="h2R-16-wjC" userLabel="RightBackgroundConstraint"/>
+                            <constraint firstItem="njg-wq-Mza" firstAttribute="bottom" secondItem="UC5-mO-eSK" secondAttribute="bottom" constant="20" id="n8l-V4-pbB" userLabel="BottomMainViewConstraint"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="background" destination="gSH-Ku-Xi4" id="yxP-qh-E3d"/>
                         <outlet property="messageLabel" destination="9a3-Xg-bi4" id="oxA-IS-6RU"/>
                     </connections>
                 </viewController>
@@ -246,7 +264,7 @@
                                                                 <rect key="frame" x="77" y="0.0" width="237" height="19.5"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -264,7 +282,7 @@
                                                                 <rect key="frame" x="76" y="0.0" width="238" height="18"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -326,6 +344,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-pg-PGP">
+                                <rect key="frame" x="50" y="438" width="314" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="color" systemColor="labelColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xL-9t-ZHx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -342,7 +366,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="rue-Ct-Bud"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Gi6-pg-PGP" id="QcQ-E1-ogd"/>
                         <outlet property="emailTextField" destination="CyU-K4-ajv" id="IpT-HG-rMd"/>
+                        <outlet property="mainView" destination="d1D-Lu-Og8" id="LPx-hC-Rbc"/>
                         <outlet property="passwordTextField" destination="lEZ-z2-fna" id="cJj-9n-gM3"/>
                         <segue destination="2tv-2K-9yK" kind="presentation" identifier="goToHelpFromSignin" id="XiS-eP-gbX"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToDrinkDataFromSignin" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sLY-DE-WF6"/>
@@ -392,7 +418,7 @@
                                                                 <rect key="frame" x="77" y="0.0" width="237" height="19.5"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -410,7 +436,7 @@
                                                                 <rect key="frame" x="76" y="0.0" width="238" height="18"/>
                                                                 <color key="tintColor" name="AccentColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="new-password"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -472,6 +498,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wXJ-We-iea">
+                                <rect key="frame" x="50" y="438" width="314" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="color" systemColor="labelColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p7L-lA-zri"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -488,7 +520,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="kkc-k1-UZZ"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="wXJ-We-iea" id="H6c-mV-cxE"/>
                         <outlet property="emailTextField" destination="EhN-zL-DcR" id="wQR-5S-qyK"/>
+                        <outlet property="mainView" destination="XjU-YZ-8ye" id="ENS-1e-fTM"/>
                         <outlet property="passwordTextField" destination="qTs-2E-Ver" id="dbY-fw-LK9"/>
                         <segue destination="2tv-2K-9yK" kind="presentation" identifier="goToHelpFromSignup" id="E5f-QD-D5a"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToDrinkDataFromSignup" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="NSE-9k-6bX"/>
@@ -512,67 +546,74 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-3X-3Nk" userLabel="Main View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXv-26-pSe" userLabel="Main View">
                                 <rect key="frame" x="50" y="20" width="314" height="846"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-jx-eRx" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="146.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vUP-2y-w1j">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="146.5"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                                <string key="text">Elevate your beverage consumption monitoring with Drink Diary app. Embrace a free and seamless journey by signing up to effortlessly track your beverage choices. Accessible via both web and iOS app, our user-friendly interface ensures you're always aligned with your goals. Watch as your drink data gracefully resets at midnight, ready to kickstart your day anew. You have the power to erase your data or your account whenever you choose. Enhance your daily routine with a touch of elegance and practicality.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZEW-ja-8f7" userLabel="Bottom View">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vUP-2y-w1j" userLabel="Help Label">
+                                        <rect key="frame" x="0.0" y="360.5" width="314" height="125"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="hxE-G1-dwt" userLabel="HeightHelpLabelConstraint"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-xM-ULx">
+                                        <rect key="frame" x="0.0" y="762" width="314" height="32"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete account?" cornerStyle="fixed" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteAccountPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="K5b-L4-8pV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j42-ML-rd5">
                                         <rect key="frame" x="0.0" y="814" width="314" height="32"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j42-ML-rd5">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="32"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Dismiss" cornerStyle="fixed" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                                    <color key="baseForegroundColor" name="AccentColor"/>
-                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="dismissPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="iXd-Td-m26"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWz-xM-ULx">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="0.0"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Delete account?" cornerStyle="fixed" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                                    <color key="baseForegroundColor" name="AccentColor"/>
-                                                    <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="deleteAccountPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="K5b-L4-8pV"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Dismiss" cornerStyle="fixed" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                            <color key="baseBackgroundColor" name="ButtonBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="dismissPressed:" destination="2tv-2K-9yK" eventType="touchUpInside" id="iXd-Td-m26"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j42-ML-rd5" secondAttribute="trailing" id="46N-p1-c2o" userLabel="RightDismissButtonConstraint"/>
+                                    <constraint firstItem="vUP-2y-w1j" firstAttribute="leading" secondItem="JXv-26-pSe" secondAttribute="leading" id="JUw-lO-RB3" userLabel="LeftHelpLabelConstraint"/>
+                                    <constraint firstItem="j42-ML-rd5" firstAttribute="leading" secondItem="JXv-26-pSe" secondAttribute="leading" id="a40-qG-bEm" userLabel="LeftDismissButtonConstraint"/>
+                                    <constraint firstAttribute="trailing" secondItem="OWz-xM-ULx" secondAttribute="trailing" id="bgl-Ue-VWv" userLabel="RightDeleteAccountButtonConstraint"/>
+                                    <constraint firstItem="vUP-2y-w1j" firstAttribute="centerY" secondItem="JXv-26-pSe" secondAttribute="centerY" id="bqx-tW-x1n" userLabel="VerticalHelpLabelConstraint"/>
+                                    <constraint firstItem="j42-ML-rd5" firstAttribute="top" secondItem="OWz-xM-ULx" secondAttribute="bottom" constant="20" id="cH5-pF-hXd" userLabel="BottomDeleteAccountButtonConstraint"/>
+                                    <constraint firstItem="vUP-2y-w1j" firstAttribute="centerX" secondItem="JXv-26-pSe" secondAttribute="centerX" id="ciE-a2-RSv" userLabel="HorizontalHelpLabelConstraint"/>
+                                    <constraint firstAttribute="trailing" secondItem="vUP-2y-w1j" secondAttribute="trailing" id="is9-gS-hNH" userLabel="RightHelpLabelConstraint"/>
+                                    <constraint firstAttribute="bottom" secondItem="j42-ML-rd5" secondAttribute="bottom" id="uYz-y8-fhn" userLabel="BottomDismissButtonConstraint"/>
+                                    <constraint firstItem="OWz-xM-ULx" firstAttribute="leading" secondItem="JXv-26-pSe" secondAttribute="leading" id="wzn-YI-tku" userLabel="LeftDeleteAccountButtonConstraint"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V5f-3v-CpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V5f-3v-CpO" firstAttribute="trailing" secondItem="3Oi-3X-3Nk" secondAttribute="trailing" constant="50" id="11m-JR-fmc" userLabel="RightMainViewConstraint"/>
-                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="top" secondItem="V5f-3v-CpO" secondAttribute="top" constant="20" id="TNy-mN-fC0" userLabel="TopMainViewConstraint"/>
+                            <constraint firstItem="V5f-3v-CpO" firstAttribute="trailing" secondItem="JXv-26-pSe" secondAttribute="trailing" constant="50" id="6sL-r9-sMj" userLabel="RightMainViewConstraint"/>
+                            <constraint firstItem="JXv-26-pSe" firstAttribute="top" secondItem="V5f-3v-CpO" secondAttribute="top" constant="20" id="8ai-0r-o9V" userLabel="TopMainViewConstraint"/>
+                            <constraint firstItem="JXv-26-pSe" firstAttribute="leading" secondItem="V5f-3v-CpO" secondAttribute="leading" constant="50" id="MVs-57-qF0" userLabel="LeftMainViewConstraint"/>
                             <constraint firstAttribute="bottom" secondItem="8gq-RQ-yCu" secondAttribute="bottom" id="U2Y-h1-nLQ" userLabel="BottomBackgroundConstraint"/>
                             <constraint firstItem="8gq-RQ-yCu" firstAttribute="top" secondItem="Nt6-HM-K7D" secondAttribute="top" id="VlZ-Jd-blv" userLabel="TopBackgroundConstraint"/>
-                            <constraint firstItem="V5f-3v-CpO" firstAttribute="bottom" secondItem="3Oi-3X-3Nk" secondAttribute="bottom" constant="20" id="bDm-yp-Rl7" userLabel="BottomMainViewConstraint"/>
                             <constraint firstItem="8gq-RQ-yCu" firstAttribute="leading" secondItem="Nt6-HM-K7D" secondAttribute="leading" id="ii6-gw-pV5" userLabel="LeftBackgroundConstraint"/>
                             <constraint firstAttribute="trailing" secondItem="8gq-RQ-yCu" secondAttribute="trailing" id="pEL-ul-yRM" userLabel="RightBackgroundConstraint"/>
-                            <constraint firstItem="3Oi-3X-3Nk" firstAttribute="leading" secondItem="V5f-3v-CpO" secondAttribute="leading" constant="50" id="zA3-WS-dIG" userLabel="LeftMainViewConstraint"/>
+                            <constraint firstItem="V5f-3v-CpO" firstAttribute="bottom" secondItem="JXv-26-pSe" secondAttribute="bottom" constant="20" id="pl9-18-wmJ" userLabel="BottomMainViewConstraint"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helpLabel" destination="vUP-2y-w1j" id="oMT-0Y-fOt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwj-cu-M5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,6 +633,9 @@
         <namedColor name="ButtonBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
