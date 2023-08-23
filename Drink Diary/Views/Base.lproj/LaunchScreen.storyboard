@@ -32,12 +32,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6Js-7B-kHu" secondAttribute="bottom" id="4Xk-zT-Xn9"/>
-                            <constraint firstItem="jbo-mE-NI9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Rk-SZ-QJK"/>
-                            <constraint firstItem="6Js-7B-kHu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="H0e-x4-Aw5"/>
-                            <constraint firstAttribute="trailing" secondItem="6Js-7B-kHu" secondAttribute="trailing" id="a5l-aQ-9lf"/>
-                            <constraint firstItem="jbo-mE-NI9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ddo-a0-Ndo"/>
-                            <constraint firstItem="6Js-7B-kHu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rp3-B7-Zmc"/>
+                            <constraint firstAttribute="bottom" secondItem="6Js-7B-kHu" secondAttribute="bottom" id="4Xk-zT-Xn9" userLabel="BottomBackgroundConstraint"/>
+                            <constraint firstItem="jbo-mE-NI9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Rk-SZ-QJK" userLabel="VerticalDrinkDiaryLabelConstraint"/>
+                            <constraint firstItem="6Js-7B-kHu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="H0e-x4-Aw5" userLabel="LeftBackgroundConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="6Js-7B-kHu" secondAttribute="trailing" id="a5l-aQ-9lf" userLabel="RightBackgroundConstraint"/>
+                            <constraint firstItem="jbo-mE-NI9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ddo-a0-Ndo" userLabel="HorizontalDrinkDiaryLabelConstraint"/>
+                            <constraint firstItem="6Js-7B-kHu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rp3-B7-Zmc" userLabel="TopBackgroundConstraint"/>
                         </constraints>
                     </view>
                 </viewController>

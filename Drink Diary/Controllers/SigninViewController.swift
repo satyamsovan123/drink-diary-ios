@@ -21,6 +21,7 @@ class SigninViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         authenticationManager.delegate = self
+        
     }
     
     @IBOutlet weak var mainView: UIStackView!
@@ -36,6 +37,8 @@ class SigninViewController: UIViewController {
     }
     
     @IBAction func helpPressed(_ sender: UIButton) {
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
         performSegue(withIdentifier: "goToHelpFromSignin", sender: self)
     }
     
@@ -143,3 +146,4 @@ extension SigninViewController: AuthenticationManagerDelegate {
         }
     }
 }
+

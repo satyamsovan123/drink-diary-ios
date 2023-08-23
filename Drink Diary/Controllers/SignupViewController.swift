@@ -36,6 +36,8 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func helpPressed(_ sender: UIButton) {
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
         performSegue(withIdentifier: "goToHelpFromSignup", sender: self)
     }
     
@@ -142,3 +144,5 @@ extension SignupViewController: AuthenticationManagerDelegate {
         }
     }
 }
+
+

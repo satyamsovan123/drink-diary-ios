@@ -66,6 +66,7 @@ class DrinkDataViewController: UIViewController {
     
     @IBAction func signOutPressed(_ sender: UIButton) {
         self.token = ""
+        setBackground(beverageName: "")
         self.dismiss(animated: true, completion: nil)
     }
     
