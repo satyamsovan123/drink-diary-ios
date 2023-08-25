@@ -117,6 +117,8 @@ extension SigninViewController: AuthenticationManagerDelegate {
             CommonService.logger("Message - \(self.message)")
             if(self.message != Constant.AuthenticationMessage.signinSuccessfulMessage) {
                 self.performSegue(withIdentifier: "goToInformationFromSignin", sender: self)
+            } else {
+                CommonService.currentBackground = ""
             }
             
         }
@@ -127,6 +129,7 @@ extension SigninViewController: AuthenticationManagerDelegate {
         DispatchQueue.main.async {
             self.stopProcessing()
             
+            CommonService.currentBackground = ""
             self.message = Constant.Common.error
             self.performSegue(withIdentifier: "goToInformationFromSignin", sender: self)
         }
